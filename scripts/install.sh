@@ -13,5 +13,3 @@ PIP="$VENV/bin/pip"
 
 "$PIP" install -U pip
 "$PIP" install -r "$REQUIREMENTS"
-
-source "./$VENV/bin/activate"

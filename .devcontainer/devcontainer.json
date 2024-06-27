@@ -4,11 +4,8 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "pip install -r requirements.txt",
-  "postCreateCommand": "chmod +x ./scripts/install.sh && ./scripts/install.sh",
-  "postAttachCommand": {
-    "server": "flask --debug run"
-  },
+  "updateContentCommand": "./scripts/install.sh",
+  "postAttachCommand": "./scripts/run.sh",
   "portsAttributes": {
     "5000": {
       "label": "Application",
