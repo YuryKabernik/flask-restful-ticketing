@@ -6,7 +6,7 @@ venues = Blueprint('venues', __name__)
 
 @venues.route('')
 def get_venues():
-    return [None]
+    return []
 
 
 @venues.route('<venue_id>/sections')
