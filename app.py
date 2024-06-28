@@ -1,10 +1,6 @@
-from flask import Flask, jsonify
+from webapi import create_application
 
-app = Flask(__name__)
-
-@app.route("/")
-def hello_world():
-    return jsonify({ 'message': 'Hello'})
+app = create_application()
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
