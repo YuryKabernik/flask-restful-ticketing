@@ -2,7 +2,6 @@ from flask import Blueprint
 
 
 orders = Blueprint("orders", __name__)
-orders.add_url_rule()
 
 
 @orders.route("cart/<cart_id>")
